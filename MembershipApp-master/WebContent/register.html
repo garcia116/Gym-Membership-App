@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gym Fitness Membership</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gym Fitness Membership">
+    <meta name="keywords" content="fitness, membership">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+
+    <!-- Main Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header section -->
+    <header class="header-section">
+        <a href="index.html" class="site-logo">
+            <h1>Gym Membership</h1>
+        </a>
+        <ul class="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a class="active" href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li class="header-right">
+                <div class="hr-box">
+                    <img src="images/location-icon.png" alt="">
+                    <h6>1430 N 8th Street, San Jose, CA</h6>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <div class="clearfix"></div>
+    <!-- Header section end -->
+
+    <!-- Page top section -->
+    <section class="page-top-section set-bg" data-setbg="images/register-top-bg.jpg">
+        <div class="container">
+            <h2>Register</h2>
+        </div>
+    </section>
+    <!-- Page top section end -->
+
+    <!-- Contact section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2 class="contact-title">Contact Info</h2>
+                    <div class="contact-info-warp">
+                        <h4>Location</h4>
+                        <div class="contact-info">
+                            <img src="img/icons/1-dark.png" alt="">
+                            <div class="cf-text">
+                                <p>1430 N 8th Street, San Jose, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-info-warp">
+                        <h4>Subscriptions</h4>
+                        <div class="contact-info">
+                            <img src="img/icons/2-dark.png" alt="">
+                            <div class="cf-text">
+                                <p>+1 (603)535-4592</p>
+                                <p>+1 (603)535-4556</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-info-warp">
+                        <h4>E-mail</h4>
+                        <div class="contact-info">
+                            <img src="img/icons/3-dark.png" alt="">
+                            <div class="cf-text">
+                                <p>contact@fitnessmembership.com</p>
+                                <p>www.fitnessmembership.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Register Section -->
+                <div class="col-lg-8">
+                    <h2 class="contact-title">Register</h2>
+                    <form class="contact-form" action="RegisterSuccess" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" placeholder="First name" name="fname" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Last name" name="lname" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Email" name="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="password" placeholder="Password" name="password" required>
+                            </div>
+                             <div class="col-md-6">
+                                <input type="text" placeholder="Phone" name="phone" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="date" placeholder="YYYY/MM/DD" name="date" required>
+                            </div>
+                            <div class="col-md-6">
+                                <select required name="gender">
+                                    <option value="MALE">Male</option>
+                                    <option value="FEMALE" >Female</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <select name="membership">
+                                    <option value="BASIC">Basic</option>
+                                    <option value="PLUS">Plus</option>
+                                    <option value="PREMIUM">Premium</option>
+                                </select>
+                            </div>
+                             <div class="col-md-6">
+                                <input type="text" placeholder="Street address" name="address" required>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="site-btn">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="map"><iframe width="600" height="450" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJeTX-s5XMj4ARpd08-2y8v5w&key=AIzaSyBOA3d-57tarxJd7JqhLAcr8P4gsDn3EFk"
+                allowfullscreen></iframe></div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- Footer section -->
+    <footer class="footer-section set-bg" data-setbg="images/footer-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h4>Location</h4>
+                        <div class="fw-info-box">
+                            <img src="images/location.png" alt="">
+                            <div class="fw-info-text">
+                                <p>1430 N 8th Street, San Jose, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h4>Subscriptions</h4>
+                        <div class="fw-info-box">
+                            <img src="images/phoneIcon.png" alt="">
+                            <div class="fw-info-text">
+                                <p>+1 (603)535-4592</p>
+                                <p>+1 (603)535-4556</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h4>E-mail</h4>
+                        <div class="fw-info-box">
+                            <img src="images/email_icon.png" alt="">
+                            <div class="fw-info-text">
+                                <p>contact@fitnessmembership.com</p>
+                                <p>www.fitnessmembership.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 order-2 order-md-1">
+                    <div class="copyright">
+                        <p>
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section end -->
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

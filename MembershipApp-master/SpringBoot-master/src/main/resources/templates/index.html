@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<title>Member Manager</title>
+</head>
+<body>
+<div align="center">
+    <h1>Member List</h1>
+    <a href="new">Create New Member</a>
+    <br/><br/>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Member ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Birth Date</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th>Membership</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="member : ${listMembers}">
+            	<td th:text="${member.id}">Product ID</td>
+                <td th:text="${member.fname}">First Name</td>
+                <td th:text="${member.lname}">Last Name</td>
+                <td th:text="${member.date}">Birth Date</td>
+                <td th:text="${member.phone}">Phone Number</td>                
+                <td th:text="${member.email}">Email</td>
+                <td th:text="${member.password}">Password</td>
+                <td th:text="${member.gender}">Gender</td>
+                <td th:text="${member.address}">Address</td>
+                <td th:text="${member.membership}">Membership</td>
+                
+                
+                <td>
+                	<a th:href="@{'/edit/' + ${member.id}}">Edit</a>
+                	&nbsp;&nbsp;&nbsp;
+                	<a th:href="@{'/delete/' + ${member.id}}">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>    
+</body>
+</html>
